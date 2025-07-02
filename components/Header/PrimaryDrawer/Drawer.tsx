@@ -1,6 +1,6 @@
 'use client';
 
-import { AlignJustify } from "lucide-react";
+import { AlignJustify, Heart, Search, ShoppingBag } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -56,6 +56,22 @@ export function PrimaryDrawer() {
                 </Link>
               ))}
             </nav>
+          </div>
+
+          <div className='flex gap-4 w-full justify-center px-4 py-4'>
+            <div className='cursor-pointer'>
+              <Search color='#4B5563' size={22} />
+            </div>
+            <div className='cursor-pointer'>
+              <Link href='/wishlist'>
+                <Heart color='#4B5563' size={22} />
+              </Link>
+            </div>
+            <div className='cursor-pointer'>
+              <Link href='/cart'>
+                <ShoppingBag color='#4B5563' size={22} />
+              </Link>
+            </div>
           </div>
 
           {/* Auth Section */}
