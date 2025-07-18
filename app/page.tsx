@@ -1,6 +1,6 @@
 
 export default function Home() {
   return (
-    <main>Shree Ganeshay Namah</main>
+    <main className="text-center">Shree Ganeshay Namah</main>
   );
 }
